@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cài đặt"
+            android:textColor="#202124"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="ÂM THANH"
+            android:textColor="#4285F4"
+            android:textStyle="bold"
+            android:textSize="13sp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnNotificationSound"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Chọn âm thanh thông báo"
+            android:textAllCaps="false"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnClassAlarmSound"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Chọn nhạc chuông đi học"
+            android:textAllCaps="false"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="THỜI GIAN BÁO TRƯỚC"
+            android:textColor="#4285F4"
+            android:textStyle="bold"
+            android:textSize="13sp"/>
+
+        <Spinner
+            android:id="@+id/spinnerAlarmLead"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="NHẮC DEADLINE"
+            android:textColor="#4285F4"
+            android:textStyle="bold"
+            android:textSize="13sp"/>
+
+        <CheckBox
+            android:id="@+id/checkDeadlineOneDay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nhắc trước 1 ngày"/>
+
+        <CheckBox
+            android:id="@+id/checkDeadlineOneHour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nhắc trước 1 giờ"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnResetSettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Khôi phục cài đặt mặc định"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+
+</ScrollView>
